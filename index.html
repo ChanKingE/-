@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title></title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="./css/animate.min.css" />
+
+    <!-- swiper.css-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <!-- 重置样式 -->
+    <link rel="stylesheet/less" href="./css/reset.less" />
+
+    <!-- 公共样式 -->
+    <link rel="stylesheet/less" href="./css/public.less" />
+
+    <!-- 页面独立的 -->
+    <link rel="stylesheet/less" href="./css/index.less" />
+
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <!-- 搜索栏 -->
+      <div class="d1">
+        <div class="logo">
+          <img
+            src="https://m.mi.com/static/img/icon-header-logo3.ddf2a1c313.png"
+            alt=""
+          />
+        </div>
+        <a href="#" class="search">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAQAAAD/5HvMAAAEx0lEQVQYGe3Bf0yUdRwH8I9GpBtZVpul0y1/ZD8sKzdXbupMh3Pq0jWtzbVs9YfL8scfLq02h1m52R3c832+z/d5HrjjAOH4KQhy4MQD4eS4gXiCePLjBIwU8VeCOAPy3dZf/mEpz56zW93rRRQVFRUVFfU/dGFM+UTHlOrXzq/yf9HwefeS0plpk4/F0b+je5x/UZXIPZV+URmRwMEhQfs940K+ry6hYTY9Wu0Tyze6yxVYwSGgQoUKFSpUCMiwwH6zPLVqZVcsPRrlSwvqVVghwMGhQYMOHTp0aNDAIcBhhQ53UcWLFH4127QrElQwqEi7keUu21W/vnl5+/y2dwKraj8p3pdZ7bzDIYNDQmqweQWFU/cTpU4GAQUMro6SbR2z6D4aFuRb0m4yqFCgDXq3U7hciynOSYQOBertgr2np9I/ODHPlSlDg4AN3m8oPKq+t0GHguSexg/ogepjPbvZkIACbci3lsx3Yr06rECGvSO4gB6SbxMb5pBhDwZeInN1vWJvY5DB+5uX0ShUfmeDAhtKCkOxZCZPogUCMo5vpFEJxRSkcKiQ0BBP5gnMSu+RIaGokEatc2ZqSEBCqasnhszi32SFgBYKLiQDqnfI0CAGz79B5uibkOOVIZCXTob0TrK3qeA4tpfM0TmPQYO427CBDHLrDAoO+H+LITM0r+VQkRy88DwZFFiXBAWOS73PkRl8WzgU5JVVjyeDQi+LPhmOW63zyAxH9yvgKE31jCGDKqZltTPYh+rXkBmKXAIyKpLIsJpn8hskpMDzJZmhKFuAoXIfGeaPO+i1IQXHtpIZPHsVyCgXZJhnUm6TBPtI3UdkBv9mDo5DOVUxZFDpjAO/yHDcCcSTGVreZxDI8F58kgxqelMe5LD3h+aQGbrnsBENYrDjbTKobnMSFLh8A7Fkhpa4Ao8MgcpdZEjTuAI3h4DnRzJLYEMiODKPX3qKDAjOF30a+N3gYjJLz+SMs0lQUL2ZDDiYqkDCQffFcWSeih8sYEht/HUqjVJgjehTIOH0CjJT99QDbRJsKCxtG0+j0PWqvUOGFYdzyGxnlyVf5ZCQ9xM9tJPP5jbaIMEZ7J5B5jv6FR/iUPsP778eRw+hc4ajhEGBs+NkPIXDmTFuRyI4FBSW9EyhB2h9N+O0AgEFR5MoXK49XilzMDBktBZ+Fnia/oZ/ev6elKscAioUOEPtCyl8POucfRwSZOTVunZWxg9MoHtcnuxek5mQE7JBhoAODQIStBttCyh8OubmHEke4LBAhXM4uykt35mWb8212bPSi7M6nX9wWCGQfL2M9U73JjBw2KBfbl1M4VPxmG9tdl76gA0WWCBBhQYNKiRY8TMYMnuzXdVL6S/H90hQwGHvObeEwiv4Vpn1UG1ea9ZV510dOhxIG8npOnykNKF5Lt2jZjeDCgXJl4PLKdx6xja+4Hm94D3Hh471rhXFi+qm0X3UfMsgwKDeOreUIoP3awYFEsTNs8soMnh3MnAw6FdallNkOLGLQUBBcl/LSooMtTtkqODQBlpWU2TwbZGhgEG5fWY1RQbfVhkcDKK/eTVFhtrtMjg49Butiygy+LfKEOAodlKkCHyq94vhUx9T5GiYXjn73FiKioqKior6z/oTCs8KMOW0P6QAAAAASUVORK5CYII="
+            alt=""
+          />
+          搜索商品名称
+        </a>
+        <div class="logo">
+          <img
+            src="https://m.mi.com/static/img/icon-user.23496a0116.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="d2">
+        <ul id="Tab" class="nav nav-tabs">
+          <li class="active">
+            <a href="#tab1" data-toggle="tab"> 推荐 </a>
+          </li>
+          <li>
+            <a href="#tab2" data-toggle="tab">智能</a>
+          </li>
+          <li>
+            <a href="#tab3" data-toggle="tab">电视</a>
+          </li>
+          <li>
+            <a href="#tab4" data-toggle="tab">家电</a>
+          </li>
+          <li>
+            <a href="#tab5" data-toggle="tab">笔记本</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <!-- Tab标签页 项目 -->
+      <div id="TabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="tab1">
+          <div class="container-xs">
+            <!-- 轮播图 -->
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/da29cf6466f8b711cb97dd54fc891fb6.jpg?thumb=1&w=720&h=360"
+                    alt
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f1aa17b50f39a8cc6750db7c9d1a9572.jpg?thumb=1&w=720&h=360"
+                    alt
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eca547b6603ada7b09e94455725ba5df.jpg?thumb=1&w=720&h=360"
+                    alt
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 内容 -->
+            <div class="cells_auto_fill">
+              <!--横轴单元格自动填充-->
+              <div class="cell">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b1749080cf5bbc4dfebff83013bbebaf.png?f=webp&w=216&h=228&bg=FFFFFF"
+                  alt=""
+                />
+              </div>
+              <div class="cell">
+                <img
+                  src="https://i8.mifile.cn/v1/a1/eb5024fe-dfe3-6e53-3e18-675bef5fa06e.webp?w=216&h=228&bg=EAF6FD"
+                  alt=""
+                />
+              </div>
+              <div class="cell">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/69c250436545049ccab81c3e32033cf2.png?f=webp&w=216&h=228&bg=FFFFFF"
+                  alt=""
+                />
+              </div>
+              <div class="cell">
+                <img
+                  src="https://i8.mifile.cn/v1/a1/e8bc849a-0a3b-21a0-6810-7da3a3903dee.webp?w=216&h=228&bg=FDEFDE"
+                  alt=""
+                />
+              </div>
+              <div class="cell">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0434594382110f3bd15c90f040d5d542.jpg?f=webp&w=216&h=228&bg=FFFFFF"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="cells_auto_fill">
+              <!--横轴单元格自动填充-->
+              <div class="cell">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/64f3988b6216e4c1ab62a7f50df3e816.png?f=webp&w=216&h=228&bg=FFFFFF"
+                  alt=""
+                />
+              </div>
+              <div class="cell">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ea68dee2bfa0e55a82236b0d968e975.png?w=216&h=228&bg=FCEAEA"
+                  alt=""
+                />
+              </div>
+              <div class="cell">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96c780016ea196743905dc93f9249c39.png?w=216&h=228&bg=FDF5E5"
+                  alt=""
+                />
+              </div>
+              <div class="cell">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9425031cdd7af22d9a23a5ae16d1f57c.jpg?f=webp&w=216&h=228&bg=FFFFFF"
+                  alt=""
+                />
+              </div>
+              <div class="cell">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f11f9df6b0b0b428f8c8fc3267131830.png?w=216&h=228&bg=FDEDE8"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="imgbox">
+              <a href="#">
+                <img
+                  src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/16305100fd7913dd727e8906b97e8998.png?f=webp&w=537&h=762&bg=DDE2E6"
+                  alt=""
+              /></a>
+              <div class="sbox">
+                <a href="#"
+                  ><img
+                  src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/f8a28a90c3c449ba422a10e40085d2e9.png?f=webp&w=537&h=378&bg=DBDEEF""
+                  alt=""></a
+                >
+                <a href="#"
+                  ><img
+                    src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/200a6f45d1ccbf7d8fd92f4bbe2842d4.jpeg?f=webp&w=537&h=378&bg=F3E7E7"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <a href="#"
+              ><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/051b383d45f1fad5aa3bfae8851af7c4.png?f=webp&w=1080&h=660&bg=FFFFFF"
+                alt=""
+            /></a>
+            <ul class="cell_list">
+              <li>
+                <a href="#">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9d7f31258a1f84a277918cecab14aaa.jpg?thumb=1&w=344&h=280"
+                    alt=""
+                  />
+                  <div class="info">
+                    <div class="name">K50 电竞版</div>
+                    <div class="brief">全线拉满的冷血旗舰</div>
+                    <div class="price">
+                      2999 <span>起</span><span class="old">3299</span>
+                    </div>
+                    <div class="buybtn">立即购买</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/106f65f704121972e0847bd466a00a99.jpg?thumb=1&w=344&h=280"
+                    alt=""
+                  />
+                  <div class="info">
+                    <div class="name">Xiaomi 12</div>
+                    <div class="brief">全新骁龙8｜5000万主摄</div>
+                    <div class="price">3699 <span>起</span></div>
+                    <div class="buybtn">立即购买</div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9d7f31258a1f84a277918cecab14aaa.jpg?thumb=1&w=344&h=280"
+                    alt=""
+                  />
+                  <div class="info">
+                    <div class="name">K50 电竞版</div>
+                    <div class="brief">全线拉满的冷血旗舰</div>
+                    <div class="price">
+                      2999 <span>起</span><span class="old">3299</span>
+                    </div>
+                    <div class="buybtn">立即购买</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/106f65f704121972e0847bd466a00a99.jpg?thumb=1&w=344&h=280"
+                    alt=""
+                  />
+                  <div class="info">
+                    <div class="name">Xiaomi 12</div>
+                    <div class="brief">全新骁龙8｜5000万主摄</div>
+                    <div class="price">3699 <span>起</span></div>
+                    <div class="buybtn">立即购买</div>
+                  </div></a
+                >
+              </li>
+            </ul>
+            <a href="#" class="more">更多小米手机产品 ></a>
+            <a href="#"
+              ><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/396893c2d8416dc791cc3cd7f8a65bdf.jpeg?f=webp&w=1080&h=660&bg=FFFFFF"
+                alt=""
+            /></a>
+            <a href="#" class="more">更多小米电视产品 ></a>
+
+            <a href="#"
+              ><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/393a90da633889384d35acb7c44eeb17.jpg?f=webp&w=1080&h=660&bg=FFFFFF"
+                alt=""
+            /></a>
+            <ul class="cell_list">
+              <li>
+                <a href="#">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6eef3de395e69ab1f7fb8de10bbae649.jpg?thumb=1&w=344&h=280"
+                    alt=""
+                  />
+                  <div class="info">
+                    <div class="name">RedmiBook Pro 14</div>
+                    <div class="brief">2.5K超视网膜全面屏</div>
+                    <div class="price">4999 <span>起</span></div>
+                    <div class="buybtn">立即购买</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dff54ca1a31d2441e38c973fbc9bf9b.jpg?thumb=1&w=344&h=280"
+                    alt=""
+                  />
+                  <div class="info">
+                    <div class="name">RedmiBook Pro 15</div>
+                    <div class="brief">3.2K 超清视网膜全面屏</div>
+                    <div class="price">5299 <span>起</span></div>
+                    <div class="buybtn">立即购买</div>
+                  </div></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6eef3de395e69ab1f7fb8de10bbae649.jpg?thumb=1&w=344&h=280"
+                    alt=""
+                  />
+                  <div class="info">
+                    <div class="name">RedmiBook Pro 14</div>
+                    <div class="brief">2.5K超视网膜全面屏</div>
+                    <div class="price">4999 <span>起</span></div>
+                    <div class="buybtn">立即购买</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dff54ca1a31d2441e38c973fbc9bf9b.jpg?thumb=1&w=344&h=280"
+                    alt=""
+                  />
+                  <div class="info">
+                    <div class="name">RedmiBook Pro 15</div>
+                    <div class="brief">3.2K 超清视网膜全面屏</div>
+                    <div class="price">5299 <span>起</span></div>
+                    <div class="buybtn">立即购买</div>
+                  </div></a
+                >
+              </li>
+            </ul>
+            <a href="#" class="more">更多小米笔记本产品 ></a>
+
+            <a href="#"
+              ><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5442b538b27d4664b61b740e8934753b.jpg?f=webp&w=1080&h=660&bg=FFFFFF"
+                alt=""
+            /></a>
+            <a href="#" class="more">更多米家智能产品 ></a>
+
+            <ul class="cell_list" style="border: none">
+              <li>
+                <a href="#">
+                  <img
+                    src="https://i8.mifile.cn/v1/a1/46c44f3e-479d-a999-dd2d-98fb39b51e17.webp?w=537&h=720&bg=C0A491"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://i8.mifile.cn/v1/a1/b79cb907-3ae4-2a35-6756-b243b386a95a.webp?w=537&h=720&bg=E8CFCB"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="https://i8.mifile.cn/v1/a1/b883172b-5aa3-7855-678f-c615109ee0a7.webp?w=537&h=720&bg=878F9B"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://i8.mifile.cn/v1/a1/8cfcd654-4af5-9ae6-c6cc-1ba9d28be8e8.webp?w=537&h=720&bg=9BB5C4"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://i8.mifile.cn/v1/a1/52866372-7fe5-76c2-29a0-9ae32d07b8ff.webp?w=537&h=720&bg=D9D8C3"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://i8.mifile.cn/v1/a1/ad91499a-59ab-adc3-8fd5-98aefc1c43b4.webp?w=537&h=720&bg=B5C5BE"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+            <a href="#"
+              ><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4c4a11536a720ee0f1b516e53e4d868.jpg?f=webp&w=1080&h=420&bg=873FFA"
+                alt=""
+            /></a>
+            <a href="#" class="more">
+              <!-- <img
+                src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/bbb5bac8089d890338b5bf8ff742cbbc.png"
+                alt=""
+              /> -->
+              了解小米
+            </a>
+          </div>
+        </div>
+        <div class="tab-pane fade in active" id="tab2">
+          <div
+            role="tabpanel"
+            class="tab-pane active fadeInUp animated"
+            id="tab2"
+          >
+            <div class="container-xs">
+              <!-- 轮播图 -->
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0b2bb13c396cc6205dd91da3a91a275a.jpg?thumb=1&w=720&h=360"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/37bd342303515c7a1a54681599e319a1.jpg?thumb=1&w=720&h=360"
+                      alt
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb4a8b7d9e77567c7330776a866e717f.jpg?thumb=1&w=720&h=360"
+                      alt
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1ab1ffaaeb5ca4c02674e9f35b1fd17c.jpg?thumb=1&w=720&h=360"
+                      alt
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a2b3ab270e5ae4c9e85d6607cdb97008.jpg?thumb=1&w=720&h=360"
+                      alt
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- 内容 -->
+              <div class="cells_auto_fill">
+                <!--横轴单元格自动填充-->
+                <div class="cell">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e47dad0c224065a73a4c722eeaf1b8e1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="cell">
+                  <img
+                    src="https://i8.mifile.cn/v1/a1/eddc5967-7f37-bf45-72d9-de0db438658b.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="cell">
+                  <img
+                    src="https://i8.mifile.cn/v1/a1/8d73dc73-3a27-1587-6c43-47998c859a48.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="cell">
+                  <img
+                    src="https://i8.mifile.cn/v1/a1/afe66888-30af-d023-ebbe-6ed7e4607167.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="cell">
+                  <img
+                    src="https://i8.mifile.cn/v1/a1/3ad80cd6-0188-1c0a-95d3-aeaa58ede247.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="cells_auto_fill">
+                <!--横轴单元格自动填充-->
+                <div class="cell">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b9b8b8e686044afb2585e78a03ee96b6.png"
+                    alt=""
+                  />
+                </div>
+                <div class="cell">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b3304e52970aa972c4f4ccd6eb424ad7.png"
+                    alt=""
+                  />
+                </div>
+                <div class="cell">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fed94691e4b361f237d411c3f687c2d4.png"
+                    alt=""
+                  />
+                </div>
+                <div class="cell">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a2bc35b6be2ab377bfc7e8fddeaa54c5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="cell">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d41a54c825db28e47888db6bd61349de.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="#">
+                <img
+                  src="https://i8.mifile.cn/v1/a1/72411ddf-3df9-8d3a-7e5d-9429991710dc.webp"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c25c68694e064f1eda1c207ad481f767.jpg"
+                  alt=""
+                />
+              </a>
+
+              <ul class="cell_list cell_list_three">
+                <li class="discount">
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/147bd9e7605a2bdb2f8660f454bf5431.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米路由器AX6000</div>
+                      <div class="brief">小米AX6000</div>
+                      <div class="price">549</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0c535011ba96da127fd3e1184eaf1e75.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">增压挂烫机</div>
+                      <div class="brief">轻松深层除皱，熨出专业效果</div>
+                      <div class="price">529</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fc68fbaf6134f56d6fac2741bf11965.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米台式净饮机</div>
+                      <div class="brief">即滤即热，乐享鲜活纯净水</div>
+                      <div class="price">1499</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/147bd9e7605a2bdb2f8660f454bf5431.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米路由器AX6000</div>
+                      <div class="brief">小米AX6000</div>
+                      <div class="price">549</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0c535011ba96da127fd3e1184eaf1e75.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">增压挂烫机</div>
+                      <div class="brief">轻松深层除皱，熨出专业效果</div>
+                      <div class="price">529</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fc68fbaf6134f56d6fac2741bf11965.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米台式净饮机</div>
+                      <div class="brief">即滤即热，乐享鲜活纯净水</div>
+                      <div class="price">1499</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="cell_list cell_list_three cell_list_three_type2">
+                <div class="title">小家电</div>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6eef3de395e69ab1f7fb8de10bbae649.jpg?thumb=1&w=344&h=280"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">米家智能蒸烤箱</div>
+                      <div class="brief">30L大容积， 蒸烤烘炸炖一机多用</div>
+                      <div class="price">1499</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dff54ca1a31d2441e38c973fbc9bf9b.jpg?thumb=1&w=344&h=280"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">米家龙头净水器</div>
+                      <div class="brief">高效过滤有害物质</div>
+                      <div class="price">149</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dff54ca1a31d2441e38c973fbc9bf9b.jpg?thumb=1&w=344&h=280"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">米家互联网洗碗机 8套嵌入式</div>
+                      <div class="brief">洗烘一体，除菌率高达99.99%</div>
+                      <div class="price">2299</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="cell_list cell_list_three cell_list_three_type2">
+                <div class="title">小家电</div>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6eef3de395e69ab1f7fb8de10bbae649.jpg?thumb=1&w=344&h=280"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">米家智能蒸烤箱</div>
+                      <div class="brief">30L大容积， 蒸烤烘炸炖一机多用</div>
+                      <div class="price">1499</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dff54ca1a31d2441e38c973fbc9bf9b.jpg?thumb=1&w=344&h=280"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">米家龙头净水器</div>
+                      <div class="brief">高效过滤有害物质</div>
+                      <div class="price">149</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8dff54ca1a31d2441e38c973fbc9bf9b.jpg?thumb=1&w=344&h=280"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">米家互联网洗碗机 8套嵌入式</div>
+                      <div class="brief">洗烘一体，除菌率高达99.99%</div>
+                      <div class="price">2299</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="#"
+                ><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c6c71c1c81edf64e2c13c137c2820805.jpg?f=webp"
+                  alt=""
+                  style="margin: 0"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade in active" id="tab3">
+          <div
+            role="tabpanel"
+            class="tab-pane active fadeInUp animated"
+            id="tab3"
+          >
+            <div class="container-xs">
+              <!-- 内容 -->
+
+              <ul class="cell_list cell_list_three cell_list_three_type3">
+                <a href="#">
+                  <img
+                    src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c0bcf1381f9a43f60b39b58e891f6daa.jpg?f=webp"
+                    alt=""
+                /></a>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d970b239e6b7152d07b6282e160192.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+
+                    <div class="info">
+                      <div class="name">小米全面屏电视E32C</div>
+                      <div class="brief">
+                        全面屏设计 | 海量内容 | 多核处理器
+                      </div>
+                      <div class="price">799</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c1bb566a499a4691cf878bb3ac23c056.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米电视4A 70英寸</div>
+                      <div class="brief">
+                        4K超高清 | 人工智能语音系统 | 蓝牙语音遥控器
+                      </div>
+                      <div class="price">3699</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202205051306_e5e4751b83509a0ac73ebe41ddbb496a.png?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米电视 4A 60 60英寸</div>
+                      <div class="brief">4K超高清 | 语音控制 | 2+8GB大存储</div>
+                      <div class="price">2799</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <a href="#"
+                ><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c5e9c307b3f2be15a71bb094509e04a9.jpg?f=webp"
+                  alt=""
+                  style="margin: 0"
+              /></a>
+              <ul
+                class="cell_list cell_list_three_type3"
+                style="border-bottom: none"
+              >
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bcb4d70f81a3ace54b9ad0338006a62a.jpg?thumb=1&w=338&h=338"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">Redmi Max 98英寸</div>
+                      <div class="brief">
+                        120Hz高刷新率 | 4GB+64GB | MEMC运动补偿
+                      </div>
+                      <div class="price">17999</div>
+                      <div class="buybtn">立即购买</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/42deca67a6b5a057e5384f79584d282d.jpg?thumb=1&w=338&h=338"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米电视 大师 65英寸OLED</div>
+                      <div class="brief">
+                        OLED自发光屏 | 百万级对比度 | 双120Hz高刷
+                      </div>
+                      <div class="price">9999</div>
+                      <div class="buybtn">立即购买</div>
+                    </div></a
+                  >
+                </li>
+              </ul>
+              <ul class="cell_list cell_list_three cell_list_three_type3">
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20d970b239e6b7152d07b6282e160192.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+
+                    <div class="info">
+                      <div class="name">小米全面屏电视E32C</div>
+                      <div class="brief">
+                        全面屏设计 | 海量内容 | 多核处理器
+                      </div>
+                      <div class="price">799</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c1bb566a499a4691cf878bb3ac23c056.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米电视4A 70英寸</div>
+                      <div class="brief">
+                        4K超高清 | 人工智能语音系统 | 蓝牙语音遥控器
+                      </div>
+                      <div class="price">3699</div>
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202205051306_e5e4751b83509a0ac73ebe41ddbb496a.png?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米电视 4A 60 60英寸</div>
+                      <div class="brief">4K超高清 | 语音控制 | 2+8GB大存储</div>
+                      <div class="price">2799</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0a8ffdca71ec6cb520fb4af45ce00fa7.jpg?f=webp"
+                alt=""
+                style="margin: 0"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade in active" id="tab4">
+          <div
+            role="tabpanel"
+            class="tab-pane active fadeInUp animated"
+            id="tab4"
+          >
+            <div class="container-xs">
+              <!-- 内容 -->
+              <a href="#"
+                ><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5a56b920bc83820736d2260c58858bf4.jpg?f=webp"
+                  alt=""
+                  style="margin: 0"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/206eeb5a11b27d97cec3f2b2c053a083.jpg?f=webp"
+                  alt=""
+                  style="margin: 0"
+              /></a>
+              <ul class="cell_list cell_list_three cell_list_three_type4">
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b847dba485b395c897363804f5e0b6a.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+
+                    <div class="info">
+                      <div class="name">十字门冰箱 486L</div>
+                      <div class="brief">风冷无霜 精细分储</div>
+                      <div class="price">
+                        2899 <span class="old">3499</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202205191939_fd57c456df328c5bb75954547098ddcb.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">对开门冰箱540L</div>
+                      <div class="brief">风冷无霜 1级能效</div>
+                      <div class="price">2799<span class="old">3699</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ace8e2c830bd0def0f6d2cf4efa665cc.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">三门冰箱215L</div>
+                      <div class="brief">三门三温区 新鲜冷冻随用随切</div>
+                      <div class="price">1299<span class="old">1499</span></div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ad2af04e55330b35b6ccb50ce4128573.jpg?f=webp"
+                alt=""
+                style="margin: 0"
+              />
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e47ab94753758ce86f7e2cc9ef205d8a.jpg?f=webp"
+                alt=""
+                style="margin: 0"
+              />
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/050dbb577b3ef8f1b8d8675e72a7e167.jpg?f=webp"
+                alt=""
+                style="margin: 0"
+              />
+              <ul class="cell_list cell_list_three cell_list_three_type4">
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b847dba485b395c897363804f5e0b6a.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+
+                    <div class="info">
+                      <div class="name">十字门冰箱 486L</div>
+                      <div class="brief">风冷无霜 精细分储</div>
+                      <div class="price">
+                        2899 <span class="old">3499</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202205191939_fd57c456df328c5bb75954547098ddcb.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">对开门冰箱540L</div>
+                      <div class="brief">风冷无霜 1级能效</div>
+                      <div class="price">2799<span class="old">3699</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ace8e2c830bd0def0f6d2cf4efa665cc.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">三门冰箱215L</div>
+                      <div class="brief">三门三温区 新鲜冷冻随用随切</div>
+                      <div class="price">1299<span class="old">1499</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b847dba485b395c897363804f5e0b6a.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+
+                    <div class="info">
+                      <div class="name">十字门冰箱 486L</div>
+                      <div class="brief">风冷无霜 精细分储</div>
+                      <div class="price">
+                        2899 <span class="old">3499</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202205191939_fd57c456df328c5bb75954547098ddcb.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">对开门冰箱540L</div>
+                      <div class="brief">风冷无霜 1级能效</div>
+                      <div class="price">2799<span class="old">3699</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ace8e2c830bd0def0f6d2cf4efa665cc.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">三门冰箱215L</div>
+                      <div class="brief">三门三温区 新鲜冷冻随用随切</div>
+                      <div class="price">1299<span class="old">1499</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b847dba485b395c897363804f5e0b6a.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+
+                    <div class="info">
+                      <div class="name">十字门冰箱 486L</div>
+                      <div class="brief">风冷无霜 精细分储</div>
+                      <div class="price">
+                        2899 <span class="old">3499</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202205191939_fd57c456df328c5bb75954547098ddcb.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">对开门冰箱540L</div>
+                      <div class="brief">风冷无霜 1级能效</div>
+                      <div class="price">2799<span class="old">3699</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ace8e2c830bd0def0f6d2cf4efa665cc.jpg?thumb=1&w=221&h=221"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">三门冰箱215L</div>
+                      <div class="brief">三门三温区 新鲜冷冻随用随切</div>
+                      <div class="price">1299<span class="old">1499</span></div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0a8ffdca71ec6cb520fb4af45ce00fa7.jpg?f=webp"
+                alt=""
+                style="margin: 0"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade in active" id="tab5">
+          <div
+            role="tabpanel"
+            class="tab-pane active fadeInUp animated"
+            id="tab4"
+          >
+            <div class="container-xs">
+              <!-- 内容 -->
+              <div class="divider_line">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1bc92bd7fdb80c023c6887ae4f419e71.jpg?f=webp"
+                  alt=""
+                />
+              </div>
+
+              <ul class="one_list">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b40029067abdfcc40bb6bde90b5d95d8.jpg?thumb=1&w=696&h=436"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">RedmiBook Air 13</div>
+                      <div class="price">5199<span>起</span></div>
+                      <div class="brief">打开它，就像翻开一本杂志</div>
+                      <div class="buybtn">立即购买</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/84771bd0e6146ecbb6479735a4263ed5.jpg?thumb=1&w=696&h=436"
+                      alt=""
+                    />
+                    <div class="info">
+                      <div class="name">小米显示器27英寸 165Hz版</div>
+                      <div class="price">2199</div>
+                      <div class="brief">
+                        2K超清 | 165Hz刷新率 | 1ms IMBC快速响应 | ▲E＜2原色调校
+                        | 一级能效
+                      </div>
+                      <div class="buybtn">立即购买</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="divider_line">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a6c6904c72672a67f1ddb6d4938d414.jpg?f=webp"
+                  alt=""
+                />
+              </div>
+              <div class="divider_line">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aeb37b208fc7303d6a6e16b57e4e1942.jpg?f=webp"
+                  alt=""
+                />
+              </div>
+              <div class="divider_line">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e320df8ff307626d984f1708d3c961f2.jpg?f=webp"
+                  alt=""
+                />
+              </div>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ed0de51cddbd973e1ac2e27ba05a0693.jpg?f=webp"
+                alt=""
+              />
+              <ul class="cell_list">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0d1ffaea355ab590ee88a48c9ab1ef0f.jpg?f=webp"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d4e381d6664a0f4aa94984af7b676de5.jpg?f=webp"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/400e740d63fe4f377b05a3c969f150bf.jpg?f=webp"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1a1a44f1b6a7ed090eb624969845bd7e.jpg?f=webp"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cd3044325d320007ec3c3444396287d.jpg?f=webp"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/21d72b6e96625e586e52ac3e6b0bfedc.jpg?f=webp"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-xs">
+      <div class="cells_auto_fill">
+        <a href="#" class="active">
+          <img
+            src="https://m.mi.com/static/img/icon-home.c1947eda40.png"
+            alt=""
+          />
+          <!-- <img
+            src="https://m.mi.com/static/img/icon-home-selected.598ca2c8f9.png"
+            alt=""
+          /> -->
+          首页</a
+        >
+        <a href="#">
+          <img
+            src="https://m.mi.com/static/img/icon-category.be93273636.png"
+            alt=""
+          />
+          分类</a
+        >
+        <a href="#">
+          <img
+            src="https://m.mi.com/static/img/icon-star.d051789804.png"
+            alt=""
+          />
+          米圈</a
+        >
+        <a href="#">
+          <img
+            src="https://m.mi.com/static/img/icon-cart.585c3aa4d3.png"
+            alt=""
+          />
+          购物车</a
+        >
+        <a href="#">
+          <img
+            src="https://m.mi.com/static/img/icon-user.23496a0116.png"
+            alt=""
+          />
+          我的</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- 解析less的文件 -->
+<script src="./js/less.min.js"></script>
+
+<!-- jquery  -->
+<script src="./js/jquery.min.js"></script>
+
+<!-- bootstrap -->
+<script src="./js/bootstrap.min.js"></script>
+
+<!-- wow.js -->
+<script src="./js/wow.min.repeat.js"></script>
+
+<!-- swiper.js -->
+<script src="./js/swiper-bundle.min.js"></script>
+<script>
+  //实例化wow.js
+  new WOW().init();
+
+  //滚动监听body
+  $("body").scrollspy({ target: "#navbarNavAltMarkup" });
+
+  // 滚动监听
+  // a href == id
+  //锚点跳转滑动效果
+  $("#header a[href]").click(function () {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
+      var $target = $(this.hash);
+      $target =
+        ($target.length && $target) || $("[name=" + this.hash.slice(1) + "]");
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $("html,body").animate(
+          {
+            scrollTop: targetOffset,
+          },
+          // 滚动动画时长
+          500
+        );
+        return false;
+      }
+    }
+  });
+
+  //给页面绑定一个滚动条事件
+  $(document).scroll(function () {
+    //获取滚动条滚动长度大小
+    var distance = $(this).scrollTop();
+
+    //当滚动条滚动的长度大于10时修改样式
+    if (distance > 10) {
+      //显示返回顶部
+      // $("#gotop").css({ zIndex: 99998, opacity: 1 });
+      $("#header").css({
+        backgroundColor: "#fff",
+      });
+    } else {
+      //隐藏返回顶部
+      // $("#gotop").css({ zIndex: -99998, opacity: 0 });
+      $("#header").css({
+        backgroundColor: "transparent",
+      });
+    }
+  });
+  //初始化Swiper
+  var Swiper = new Swiper(".swiper", {
+    autoplay: true, //可选选项，自动滑动
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  //如果你初始化时没有定义Swiper实例，后面也可以通过Swiper的HTML元素来获取该实例
+  new Swiper(".swiper");
+  var Swiper = document.querySelector(".swiper").swiper;
+  Swiper.slideNext();
+
+  // 导航栏跳转
+  $(function () {
+    $("#Tab li:eq(1) a").tab("show");
+  });
+</script>
